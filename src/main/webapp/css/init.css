@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "KaiTi", serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* fox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.layout-center {
+  width: 50%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=init.css.map */

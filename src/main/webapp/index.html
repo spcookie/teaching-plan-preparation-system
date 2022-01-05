@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="lib/jquery.min.js"></script>
+    <script type="module" src="js/BaseApi.js"></script>
+    <script defer type="module" src="js/form.js"></script>
+    <title>课程编排系统</title>
+</head>
+<body>
+<header class="layout-center">
+    <h1>课程编排系统</h1>
+</header>
+<article class="layout-center">
+    <section id="base-form">
+        <h2>基础信息</h2>
+        <form>
+            <label for="number-of-courses">课程数：</label>
+            <input value="8"  id="number-of-courses" type="number">
+            <label for="number-of-semesters">学期：</label>
+            <input value="4" id="number-of-semesters" type="number">
+            <label for="credit">学分上限：</label>
+            <input value="10" id="credit" type="number">
+        </form>
+        <div class="center-button">
+            <button class="base-ok button-rectangle">确定</button>
+        </div>
+    </section>
+    <section id="detail">
+        <h2>课程信息</h2>
+        <form>
+            <ul class="layout-center">
+                <!--            <li>-->
+                <!--                <input type="text">-->
+                <!--                <input type="number">-->
+                <!--            </li>-->
+            </ul>
+        </form>
+        <div class="center-button">
+            <button class="detail-ok button-rectangle">确定</button>
+        </div>
+    </section>
+    <section id="relationship">
+        <h2>课程先修关系</h2>
+        <div class="center-button">
+            <button class="button-rectangle" id="add-ship">添加关系</button>
+        </div>
+        <form>
+            <ul class="layout-center">
+                <!--            <li>-->
+                <!--                <input type="text">-->
+                <!--                <input type="text">-->
+                <!--            </li>-->
+            </ul>
+        </form>
+        <div class="center-button">
+            <button class="button-rectangle ship-ok">确定</button>
+        </div>
+    </section>
+    <aside id="course-number">
+        <div></div>
+    </aside>
+    <section id="preparation-strategy">
+        <h2>选择课程编制策略</h2>
+        <form>
+            <input id="front" class="radio" name="strategy" type="radio" value="front" checked="checked">
+            <label for="front">尽量靠前</label>
+            <input id="uniformity" class="radio" name="strategy" type="radio" value="uniformity">
+            <label for="uniformity">安排均匀</label>
+        </form>
+        <div class="center-button">
+            <button class="button-rectangle" id="strategy-ok">开始编制</button>
+        </div>
+    </section>
+    <section id="timetable"></section>
+</article>
+</body>
+</html>
