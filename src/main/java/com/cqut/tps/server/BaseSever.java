@@ -14,7 +14,7 @@ import java.util.List;
  * @author Augenstern
  * @date 2021/12/30
  */
-public class BaseSever {
+public abstract class BaseSever {
 
     public BaseSever() {
     }

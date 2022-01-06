@@ -8,7 +8,7 @@ import javax.persistence.Id;
  * @date 2021/12/30
  */
 @Entity(name = "基础实体类")
-public class BaseEntity {
+public abstract class BaseEntity {
     private String id;
 
     public void setId(String id) {

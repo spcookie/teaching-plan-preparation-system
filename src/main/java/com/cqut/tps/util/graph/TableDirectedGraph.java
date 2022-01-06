@@ -1,5 +1,7 @@
 package com.cqut.tps.util.graph;
 
+import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Stack;
 import java.util.function.Consumer;
 
@@ -215,6 +217,19 @@ public class TableDirectedGraph<T> implements Graph<T> {
 
         private void setEdge(Edge edge) {
             this.edge = edge;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Vertex<?> vertex = (Vertex<?>) o;
+            return Penetration == vertex.Penetration && Objects.equals(data, vertex.data) && Objects.equals(edge, vertex.edge);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(data, Penetration, edge);
         }
     }
 
