@@ -1,6 +1,5 @@
 package com.cqut.tps.util.graph;
 
-import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Stack;
 import java.util.function.Consumer;
